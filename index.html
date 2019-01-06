@@ -4,9 +4,29 @@
         <title>My Example</title>
         <style>
             body {
-                background-color: darkslategrey;
-                color: azure;
-                font-size: 1.1em;
+              animation:1s blinker linear infinite;
+              -webkit-animation:1s blinker linear infinite;
+              -moz-animation:1s blinker linear infinite;
+
+               color: red;
+              }
+
+              @-moz-keyframes blinker {
+               0% { opacity: 1.0; }
+               50% { opacity: 0.0; }
+               100% { opacity: 1.0; }
+               }
+
+              @-webkit-keyframes blinker {
+               0% { opacity: 1.0; }
+               50% { opacity: 0.0; }
+               100% { opacity: 1.0; }
+               }
+
+              @keyframes blinker {
+               0% { opacity: 1.0; }
+               50% { opacity: 0.0; }
+               100% { opacity: 1.0; }
             }
             h1 {
                 color: coral;
@@ -20,8 +40,6 @@
         </style>
     </head>
     <body>
-        <h1>Embedded Styles</h1>
-        <p id="intro">Allow you to define styles for the whole document.</p>
-        <p class="colorful">This has a style applied via a class.</p>
+        <h1>Welcome AJtJP visitors!</h1>
     </body>
 </html>
